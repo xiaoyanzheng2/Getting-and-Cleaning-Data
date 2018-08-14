@@ -1,0 +1,16 @@
+
+
+train.x - Training set
+train.y - Training labels
+train/test.subject - Each row identifies the subject who performed the activity for each window sample
+test.x - Test set
+test.y - Test labels
+train - merge train data
+test - merge test data
+full - merge train and test data
+featurename - feature name loaded from features.txt
+featureindex - extract mean and standard deviation of each measurements
+wearable - full data set with mean and standard deviation of each measurements
+activityname - activity names 
+groupwearable - independent tidy data set with the average of each variable for each activity and each subject.
+
