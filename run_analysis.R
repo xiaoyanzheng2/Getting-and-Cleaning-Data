@@ -27,7 +27,7 @@ full <- rbind(train, test)
 featurename <- read.table("./data/UCI HAR Dataset/features.txt", stringsAsFactors = FALSE)[,2]
 
 ## step 2:  extract mean and standard deviation of each measurements
-featureindex <- grep(("mean\\(\\)|std\\(\\)"), featurename)
+featureindex <- grep(("mean()|std()"), featurename)
 wearable <- full[, c(1, 2, featureindex+2)]
 colnames(wearable) <- c("subject", "activity", featurename[featureindex])
 
